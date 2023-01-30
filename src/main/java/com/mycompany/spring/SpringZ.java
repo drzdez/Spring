@@ -27,7 +27,10 @@ public class SpringZ {
     
     public void run(){
         logger.info(springzConfig.getHelloWordMessage());
+        logger.info("finished");
+        
     }
+            
     
     
 }
