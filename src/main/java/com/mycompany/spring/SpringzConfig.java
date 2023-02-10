@@ -10,19 +10,35 @@ import org.springframework.context.annotation.Configuration;
 /**
  *
  * @author zdraz
+ * 
+ * J.K. Added helloWorldUser prop, getter, setter
+ *      Renamed "word" to "world"
+ * 
  */
 @Configuration
 public class SpringzConfig {
     
-    @Value(value = "${hello-word}")
-    private String helloWordMessage;
+    @Value(value = "${hello-world}")
+    private String helloWorldMessage;
     
-    
-    public String getHelloWordMessage(){
-        return helloWordMessage;
+    public String getHelloWorldMessage(){
+        return helloWorldMessage;
+    }
+        public void setHelloWordMessage(String helloWordMessage){
+        this.helloWorldMessage = helloWorldMessage;
     }
     
-    public void setHelloWordMessage(String helloWordMessage){
-        this.helloWordMessage = helloWordMessage;
+    @Value(value = "${prop-user}")
+    private String helloWorldUser;
+
+    public String getHelloWorldUser()
+    {
+        return helloWorldUser;
     }
+    
+    public void setHelloWorldUse(String msg)
+    {
+        this.helloWorldUser = msg;
+    }
+   
 }

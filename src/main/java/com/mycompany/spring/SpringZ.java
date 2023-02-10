@@ -26,11 +26,12 @@ public class SpringZ {
     }
     
     public void run(){
-        logger.info(springzConfig.getHelloWordMessage());
-        logger.info("finished");
+        logger.info(springzConfig.getHelloWorldMessage());
         
+        var str_greet = (springzConfig.getHelloWorldUser().contains("kastl"))? "Hello me, myself and I :-)" : "¡Hola amigo!";
+        
+        logger.info("Greeting: "+str_greet);
+        logger.info("finished");
     }
-            
-    
-    
+                
 }
