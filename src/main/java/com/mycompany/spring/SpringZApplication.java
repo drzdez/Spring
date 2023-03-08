@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.spring;
 
 import org.apache.logging.log4j.LogManager;
@@ -29,6 +25,7 @@ public class SpringZApplication implements CommandLineRunner{
     public static void main(String[] args) {
         // System.out.println(springzCongig.getHelloWordMessage());
         SpringApplication.run(SpringZApplication.class, args);
+        logger.info("App started!");
     }
     
     @Override
