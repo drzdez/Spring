@@ -32,6 +32,10 @@ public class SpringZ {
         
         logger.info("Greeting: "+str_greet);
         logger.info("finished");
+        
+        // Stars pyramid
+        logger.info(springzConfig.printStarsPyramid());
+        logger.info("taky finished");
     }
                 
 }

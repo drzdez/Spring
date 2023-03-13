@@ -40,5 +40,30 @@ public class SpringzConfig {
     {
         this.helloWorldUser = msg;
     }
-   
+    
+    @Value(value = "${pyramid_width}")
+    private Integer pyramid_width;
+    
+    public Integer getPyramidWidth(){
+        return pyramid_width;
+    }
+    private String stars = "Attempting to print stars pyramid bellow:\n";
+    
+    public String printStarsPyramid(){
+        var w = getPyramidWidth();
+        if (w % 2 == 0){
+            this.stars += "Width has to be odd number";
+        }
+        else {
+            var zeros = (w-1)/2;
+            var x = 1;
+            for (int i=zeros; i>=0; i--){
+                var spaces = new String(new char[i]).replace("\0", " ");
+                var stars = new String(new char[x]).replace("\0", "*");
+                this.stars += spaces+stars+"\n";
+                x = x+2;
+            }
+        }
+        return this.stars;
+    }
 }
