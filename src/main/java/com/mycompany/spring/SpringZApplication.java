@@ -27,7 +27,6 @@ public class SpringZApplication implements CommandLineRunner{
     }
         
     public static void main(String[] args) {
-        // System.out.println(springzCongig.getHelloWordMessage());
         SpringApplication.run(SpringZApplication.class, args);
     }
     
