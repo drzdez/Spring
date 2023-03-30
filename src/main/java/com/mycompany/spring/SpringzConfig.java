@@ -40,5 +40,11 @@ public class SpringzConfig {
     {
         this.helloWorldUser = msg;
     }
-   
+    
+    @Value(value = "${pyramid_width}")
+    private int pyramidWidth;
+    
+    public int getPyramidWidth(){
+        return pyramidWidth;
+    }
 }

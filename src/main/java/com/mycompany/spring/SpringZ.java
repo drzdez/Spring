@@ -19,6 +19,7 @@ public class SpringZ {
     private static final Logger logger = LogManager.getLogger(SpringZApplication.class);
     
     SpringzConfig springzConfig;
+    PyramidWriter PyramidWriter;
     
     @Autowired
     public SpringZ(SpringzConfig springzConfig){
@@ -32,6 +33,10 @@ public class SpringZ {
         
         logger.info("Greeting: "+str_greet);
         logger.info("finished");
+        
+        // Stars pyramid
+        PyramidWriter = new PyramidWriter(springzConfig);
+        logger.info(PyramidWriter);
+        logger.info("taky finished");
     }
-                
 }
