@@ -1,0 +1,28 @@
+@startuml
+annotation java.lang.Override
+annotation org.springframework.beans.factory.annotation.Autowired
+annotation org.springframework.beans.factory.annotation.Value
+annotation org.springframework.boot.autoconfigure.SpringBootApplication
+annotation org.springframework.context.annotation.Configuration
+annotation org.springframework.stereotype.Component
+class com.mycompany.spring.SpringZ
+class com.mycompany.spring.SpringZApplication
+class com.mycompany.spring.SpringzConfig
+class org.apache.logging.log4j.LogManager
+class org.apache.logging.log4j.Logger
+class org.springframework.boot.SpringApplication
+interface org.springframework.boot.CommandLineRunner
+com.mycompany.spring.SpringZ ..> org.springframework.beans.factory.annotation.Autowired
+com.mycompany.spring.SpringZ ..> org.springframework.stereotype.Component
+com.mycompany.spring.SpringZ ..> org.apache.logging.log4j.LogManager
+com.mycompany.spring.SpringZ ..> org.apache.logging.log4j.Logger
+com.mycompany.spring.SpringZApplication ..> java.lang.Override
+com.mycompany.spring.SpringZApplication ..> org.springframework.beans.factory.annotation.Autowired
+com.mycompany.spring.SpringZApplication ..> org.springframework.boot.autoconfigure.SpringBootApplication
+com.mycompany.spring.SpringZApplication ..> org.apache.logging.log4j.LogManager
+com.mycompany.spring.SpringZApplication ..> org.apache.logging.log4j.Logger
+com.mycompany.spring.SpringZApplication ..> org.springframework.boot.SpringApplication
+com.mycompany.spring.SpringZApplication --|> org.springframework.boot.CommandLineRunner
+com.mycompany.spring.SpringzConfig ..> org.springframework.beans.factory.annotation.Value
+com.mycompany.spring.SpringzConfig ..> org.springframework.context.annotation.Configuration
+@enduml

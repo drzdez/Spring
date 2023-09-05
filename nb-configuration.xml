@@ -14,5 +14,6 @@ That way multiple projects can share the same settings (useful for formatting ru
 Any value defined here will override the pom.xml file value but is only applicable to the current project.
 -->
         <netbeans.hint.jdkPlatform>Zulu_17.0.6_10</netbeans.hint.jdkPlatform>
+        <org-zeroturnaround-jrebel-netbeans.rebelXmlGenerationInvariantToken>PGFwcGxpY2F0aW9uIGdlbmVyYXRlZC1ieT0ibmV0YmVhbnMiPjxjbGFzc3BhdGg+PGRpciBuYW1lPSIvdmFyL2hvbWUvemVkL3ByanMvU3ByaW5nL3RhcmdldC9jbGFzc2VzIj48L2Rpcj48L2NsYXNzcGF0aD48L2FwcGxpY2F0aW9uPg==</org-zeroturnaround-jrebel-netbeans.rebelXmlGenerationInvariantToken>
     </properties>
 </project-shared-configuration>
